@@ -15,7 +15,7 @@ exe = "chal.py"
 def start(argv=[], *a, **kw):
     """Start the exploit against the target."""
     if args.REMOTE:
-        return ...
+        return connect('friday.polygl0ts.ch', 13372)
     else:
         return process([exe] + argv, *a, **kw)
 

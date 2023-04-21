@@ -4,7 +4,7 @@ MOD = 251 # known prime
 
 key = [secrets.randbelow(MOD) for _ in range(3)]
 
-flag = b"EPFL{XXXXXXXXXXXXXXXXX}"
+flag = b"EPFL{connoisseurs_of_the_quadratic_residuosity}"
 
 def enc(data):
     return [sum(k*pow(2*x,i,MOD) for i,k in enumerate(key)) % MOD for x in data]

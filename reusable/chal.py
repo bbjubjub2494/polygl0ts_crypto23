@@ -10,7 +10,7 @@ def encrypt(msg):
     ct, tag = cipher.encrypt_and_digest(bytes(msg, "utf8"))
     return ct+tag
 
-flag = "EPFL{XXX}"
+flag = "EPFL{1F_Y0U_R3U5E_NONCE5_CL4P_Y0UR_8ANDS}"
 message1 = flag
 message2 = "Lorem Ipsum Dolor Sit Amet"
 
