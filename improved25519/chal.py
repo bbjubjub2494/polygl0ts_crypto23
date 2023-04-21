@@ -3,7 +3,7 @@
 import kat
 import secrets
 
-FLAG = "EPFL{XXXXXXXXXXXXXXX}"
+FLAG = "EPFL{0h_n0_7he_5ecr3t_n0nce!}"
 
 
 def improved_signature(m, sk, pk):

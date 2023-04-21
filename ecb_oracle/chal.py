@@ -4,8 +4,10 @@ import secrets
 
 from Crypto.Cipher import AES
 
+FLAG = "EPFL{SEcUriTY_pr00F$?_Wh3r3_we_R_go1n9_we_d0nt_n3Ed_pr00fs}"
+
 def win():
-    print("you win here flag TODO")
+    print("flag:", FLAG)
 
 def input_hex(prompt):
     data = input(prompt)
@@ -42,6 +44,7 @@ N_ROUNDS = 64
 for _ in range(N_ROUNDS):
     ok = game()
     if not ok:
+        print("you lost")
         break
 else:
     win()
