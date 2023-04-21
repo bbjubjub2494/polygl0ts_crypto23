@@ -1,0 +1,12 @@
+services:
+  ecb_oracle:
+    build: ecb_oracle
+    ports:
+      - "13371:13371"
+    command: ./server.py 13371 ./chal.py
+
+  improved25519:
+    build: improved25519
+    ports:
+      - "13372:13372"
+    command: ./server.py 13372 ./chal.py
