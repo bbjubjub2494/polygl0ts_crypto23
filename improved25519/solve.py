@@ -52,6 +52,7 @@ A = decodepoint(pk)
 S = decodeint(sig[b // 8 : b // 4])
 h = Hint(encodepoint(R) + pk + m)
 r = Hint(m)
+assert R == scalarmult(B, r)
 # S = (r + Hint(encodepoint(R) + pk + m) * a) % l
 a = (S - r) * pow(h, -1, l) % l
 assert A == scalarmult(B, a)
